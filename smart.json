@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "redis-livedata": {
+      "path": "../../packages/redis-livedata/" 
+    },
+    "neo4j-livedata": {
+      "path": "../../packages/neo4j-livedata/" 
+    },
+    "phantomjs": {},
+    "npm": {}
+  }
+}

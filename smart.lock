@@ -1,0 +1,38 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "redis-livedata": {
+        "path": "../../packages/redis-livedata"
+      },
+      "neo4j-livedata": {
+        "path": "../../packages/neo4j-livedata"
+      },
+      "phantomjs": {},
+      "npm": {}
+    },
+    "packages": {
+      "redis-livedata": {
+        "path": "../../packages/redis-livedata"
+      },
+      "neo4j-livedata": {
+        "path": "../../packages/neo4j-livedata"
+      },
+      "phantomjs": {
+        "git": "https://github.com/gadicohen/meteor-phantomjs.git",
+        "tag": "v0.0.2",
+        "commit": "a72eb79af068dd5d5d617ac71a42bd74e0cb52a4"
+      },
+      "npm": {
+        "git": "https://github.com/arunoda/meteor-npm.git",
+        "tag": "v0.2.6",
+        "commit": "177ab6118de5bf8cffb19481343d5762ff7a2aaf"
+      },
+      "miniredis": {
+        "git": "https://github.com/meteor/miniredis.git",
+        "tag": "v0.1.0",
+        "commit": "45cbbaa54b5d03aa0bb1080601d0c18abe0134d4"
+      }
+    }
+  }
+}
