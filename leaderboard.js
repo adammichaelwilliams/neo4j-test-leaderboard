@@ -6,8 +6,20 @@ Neo4j = new Meteor.Neo4jCollection('neo4j');
 Players = new Meteor.Collection("players");
 
 if (Meteor.isClient) {
-  Template.leaderboard.players = function () {
+  Template.leaderboard.players2 = function () {
     return Players.find({}, {sort: {score: -1, name: 1}});
+  };
+  
+  Template.leaderboard.players = function () {
+//    return Neo4j.getIndexedNodes("leaderboard", function(err, node) {
+    var graph = Neo4j.find();
+    var people = Players.find({}, {sort: {score: -1, name: 1}});
+    console.log(graph);
+    console.log(people);
+    return Neo4j.find();
+      
+//      console.log(node);
+//    });
   };
 
   Template.leaderboard.selected_name = function () {
